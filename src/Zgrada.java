@@ -12,7 +12,7 @@ public class Zgrada extends StambeniObjekat {
 
             for(int i=0; i<nizStan.length; i++) {
                 nizStan[i] = new Stan();
-                System.out.print("Unesite povrsinu " + (i+1) +". stana: ");
+                System.out.println("Unesite povrsinu " + (i+1) +". stana: ");
                 double pov = new Scanner(System.in).nextDouble();
                 System.out.println("Unesite broj stanara "+ (i+1) +". stana:");
                 int brStStan = new Scanner(System.in).nextInt();
