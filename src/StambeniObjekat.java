@@ -4,6 +4,8 @@ public abstract class StambeniObjekat {
 
     StambeniObjekat(){ }
 
+    abstract double porez(double cena_po_kvadratu);
+
     // GETTERS
     public String getAdresa(){
         return adresa;

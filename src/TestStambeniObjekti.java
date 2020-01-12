@@ -15,8 +15,11 @@ public class TestStambeniObjekti {
             double pov = new Scanner(System.in).nextDouble();
             System.out.println("Unesite broj stanara u kuci:");
             int brStan = new Scanner(System.in).nextInt();
+            System.out.println("Unesite cenu poreza po kvadratu:");
+            double cenaK = new Scanner(System.in).nextDouble();
             Kuca k = new Kuca(adr, pov, brStan);
             System.out.println(k.toString());
+            System.out.println("Ukupni porez koji treba da bude placen je " + k.porez(cenaK) + ".");
         }
 
         if(kOrZ.equals("z")){
@@ -24,7 +27,10 @@ public class TestStambeniObjekti {
             int brStZgr = sc.nextInt();
             Stan[] nizStanova = new Stan[brStZgr];
             Zgrada z = new Zgrada(adr, nizStanova);
+            System.out.println("Unesite cenu poreza po kvadratu:");
+            double cenaZ = new Scanner(System.in).nextDouble();
             System.out.println(z.toString());
+            System.out.println("Ukupni porez koji treba da bude placen je " + z.porez(cenaZ) + ".");
         }
     }
 }
